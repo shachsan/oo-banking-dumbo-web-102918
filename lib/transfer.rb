@@ -12,8 +12,7 @@ class Transfer
   end
 
   def validate_bank(bank)
-    bank_account = BankAccount.all.find{|acc|acc == bank}.first
-    bank_account.status == "open" && bank_account.balance > 0 ? true : false
+
   end
 
   def valid?
