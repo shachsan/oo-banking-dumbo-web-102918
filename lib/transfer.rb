@@ -22,7 +22,7 @@ class Transfer
       self.receiver.balance+=amount
       self.status = "complete"
     else
-      "One or both of the accounts are invalid"
+      reject_tans
     end
   end
 end
