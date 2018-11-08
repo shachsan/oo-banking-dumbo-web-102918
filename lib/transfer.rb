@@ -11,12 +11,9 @@ class Transfer
 
   end
 
-  def validate_bank(bank)
-
-  end
 
   def valid?
-    sender.valid ? true : false
+    sender.valid ?
   end
 
   def execute_transaction
