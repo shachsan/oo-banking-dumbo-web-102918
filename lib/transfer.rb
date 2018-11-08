@@ -16,9 +16,9 @@ class Transfer
     bank_account.status == "open" && bank_account.balance > 0 ? true : false
   end
 
-  # def valid?
-  #   validate_bank(sender) && validate_bank(receiver) ? true : false
-  # end
+  def valid?
+    validate_bank(sender) && validate_bank(receiver) ? true : false
+  end
 
   def execute_transaction(sender, reciever, amount)
     if validate_bank(sender) && validate_bank(receiver)
