@@ -22,7 +22,7 @@ class Transfer
       self.receiver.balance+=amount
       self.status = "complete"
     else
-      reject_tans
+      
     end
   end
 end
