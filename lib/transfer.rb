@@ -20,7 +20,7 @@ class Transfer
     validate_bank(sender) && validate_bank(receiver) ? true : false
   end
 
-  def execute_transaction(sender, reciever, amount)
+  def execute_transactio
     if validate_bank(sender) && validate_bank(receiver)
       BankAccount.all.find {|acc|acc == sender}.balance -= amount
       BankAccount.all.find {|acc|acc == receiver}.balance+=amount
