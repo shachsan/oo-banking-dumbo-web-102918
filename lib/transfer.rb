@@ -26,7 +26,7 @@ class Transfer
     end
   end
 
-  def method_name
+  def reverse_transfer
 
   end
 end
