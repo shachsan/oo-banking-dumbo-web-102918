@@ -17,7 +17,7 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? && sender
+    if valid? && sender.balance >
 
     else
       "One or both of the accounts are invalid"
