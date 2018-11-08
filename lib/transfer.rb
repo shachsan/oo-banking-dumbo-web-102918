@@ -13,7 +13,7 @@ class Transfer
 
 
   def valid?
-    sender.valid ?
+    sender.valid?
   end
 
   def execute_transaction
