@@ -20,7 +20,7 @@ class Transfer
     if valid? && sender.balance > amount
       self.sender.balance-=amount
       self.receiver.balance+=amount
-      self.status = ""
+      self.status = "complete"
     else
       "One or both of the accounts are invalid"
     end
