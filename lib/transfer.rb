@@ -17,10 +17,7 @@ class Transfer
   end
 
   def execute_transaction
-    if validate_bank(sender) && validate_bank(receiver)
-      BankAccount.all.find {|acc|acc == sender}.balance -= amount
-      BankAccount.all.find {|acc|acc == receiver}.balance+=amount
-      @@all.find {|transfer|transfer == self}.status = "complete"
+    if v
     else
       "One or both of the accounts are invalid"
     end
