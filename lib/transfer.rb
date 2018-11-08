@@ -19,7 +19,7 @@ class Transfer
   def execute_transaction
     if valid? && sender.balance > amount
       self.sender.balance-=amount
-      self.receiver
+      self.receiver.balance+=
     else
       "One or both of the accounts are invalid"
     end
